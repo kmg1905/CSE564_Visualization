@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 564 Project</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<main>
+    <section class="section">
+        <div class="container">
+            <div class="row col-md-12 text-center">
+                <h3>CSE564 Project - USA Demographics Analysis </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-5" id="Total_Population">
+                    <p class="text-left"><strong>State Wise Population Distribution</strong></p>
+                </div>
+                <a href="javascript:dc.filterAll(); dc.renderAll();"><strong>Reset</strong></a>
+                <div class="col-md-7" id="Total_Population_state">
+                    <p class="text-right"><strong>Decade Wise Population in Millions</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-4 text-right" id="College_Educated_Ratio">
+                    <p class="text-left"><strong>Per Capita Income</strong></p>
+                </div>
+                <div class="col-md-4 text-right" id="Foreign">
+                    <p class="text-left"><strong>Immigration</strong></p>
+                </div>
+                <div class="col-md-4" id="PerCapitaIncome">
+                    <p class="text-right"><strong>College Education</strong></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+	</main>
+    <script type="text/javascript" src="../static/js/graphs.js"></script>
+</body>
+</html>

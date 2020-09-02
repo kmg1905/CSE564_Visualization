@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.dot {
+fill: #401400;
+stroke: #fff;
+}
+
+.line {
+fill: none;
+stroke: #bd9375;
+stroke-width: 3;
+}
+
+.frame {
+  shape-rendering: crispEdges;
+  fill: none;
+  stroke: #aaa;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+  display: none;
+}
+
+.cell text {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+</style>
+
+
+<head>
+    <title>Visualization Mini Project 2</title>
+
+</head>
+
+<h2 style = "text-align:center; color: #004021"> <b>BasketBall College Team Analysis</b>
+</h2>
+<body style="background-color:#ededc5;">
+  <div align="center">
+  <p style="color:#004021"><b>Original Data</b></p>
+  <button style="background-color:#d8e0f0" onclick="ScreePlotForPCATotal()"><b>PCA Scree</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotPCATotal()"><b>PCA Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScreePlotForMDSEucTotal()"><b>MDS Scree</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMDSTotal()"><b>MDS Euclidean Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMDSCorrTotal()"><b>MDS Correlation Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMatrixTotal()"><b>Scatter Plot Matrix</b></button>
+
+  <p style="color:#004021"><b>Random Sampled Data</b></p>
+  
+  <button style="background-color:#d8e0f0" onclick="ScreePlotForPCA()"><b>PCA Scree</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotPCA()"><b>PCA Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScreePlotForMDSEuc()"><b>MDS Scree</b></button>
+  
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMDS()"><b>MDS Euclidean Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMDSCorr()"><b>MDS Correlation Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMatrixRandom()"><b>Scatter Plot Matrix</b></button>
+  </div>
+  <div align="center">
+  <p style="color:#004021"><b>Stratified Sampled Data</b></p>
+  <button style="background-color:#d8e0f0" onclick="ScreePlotForPCAStratified()"><b>PCA Scree </b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotPCAStratified()"><b>PCA Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScreePlotForMDSEucStratified()"><b>MDS Scree</b></button>
+  
+  
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMDSStratified()"><b>MDS Euclidean Scatter</b></button>
+  
+  
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMDSCorrStratified()"><b>MDS Correlation Scatter</b></button>
+  <button style="background-color:#d8e0f0" onclick="ScatterPlotMatrixStratified()"><b>Scatter Plot Matrix</b></button>
+  </div>
+  <div align = "center">
+  <svg width="800" height="500" ></svg>
+  </div>
+  
+  <script src="http://d3js.org/d3.v4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./static/app.js"></script>
+  
+</body>
+</html>

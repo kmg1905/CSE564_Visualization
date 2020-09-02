@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <title>BasketBall College Team Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+
+}
+
+body {
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+rect:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h2 style="background-color:#42C957" align = "center">BasketBall College Team Analysis</h2>
+<h2 style="background-color:#42C957" align = "center">Data Visualization Lab1</h2>
+
+<div class="dropdown" >
+  <button class="dropbtn" align = "center" >Team Attributes</button>
+  <div class="dropdown-content" align = "center">
+  <a href="javascript:histogram('Games_Played', 12)" >Total Games Played</a>
+  <a href="javascript:histogram('Won', 12)" >Matches Won</a>
+  <a href="javascript:barchart('Offensive_Efficiency')">Offensive Efficiency</a>
+  <a href="javascript:barchart('Defensive_Efficiency')">Defensive Efficiency</a>
+  <a href="javascript:barchart('Power_Rating')" >Power Rating</a>
+  <a href="javascript:histogram('Field_Goal_Shot', 12)" >Field Goal Shot</a>
+  <a href="javascript:histogram('Field_Goal_Allowed', 12)" >Field Goal Allowed</a>
+  <a href="javascript:histogram('Turnover_Allowed', 12)" >Turnover Allowed</a>
+  <a href="javascript:histogram('Turn_Over_Commited', 12)" >Turn Over Commited</a>
+  <a href="javascript:histogram('Free_Throw_Shot', 12)" >Free Throw Shot</a>
+  <a href="javascript:histogram('Free_Throw_Allowed', 12)" >Free Throw Allowed</a>
+  <a href="javascript:histogram('Two_Point_Shot', 12)" >Two Point Shot</a>
+  <a href="javascript:histogram('Two_Point_Allowed', 12)" >Two Point Allowed</a>
+  <a href="javascript:histogram('Three_Point_Shot', 12)" >Three Point Shot</a>
+  <a href="javascript:histogram('Three_Point_Allowed', 12)" >Three Point Allowed</a>
+  <a href="javascript:barchart('Conference')" >Conferences Count</a>
+  </div>
+</div>
+
+<div id="chart" align = "center">
+</div>
+
+<!-- External JS Libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/d3.tip.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/index.js"></script>
+
+</body>
+</html>

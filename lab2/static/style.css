@@ -1,0 +1,29 @@
+.dot {
+fill: #401400;
+stroke: #fff;
+}
+
+.line {
+fill: none;
+stroke: #bd9375;
+stroke-width: 3;
+}
+
+.frame {
+  shape-rendering: crispEdges;
+  fill: none;
+  stroke: #aaa;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+  display: none;
+}
+
+.cell text {
+  font-weight: bold;
+  text-transform: capitalize;
+}
